@@ -2,6 +2,8 @@
 
 [[ $DISPLAY ]] && shopt -s checkwinsize
 
+source $HOME/.bash_aliases
+
 PS1="[\u@\h $? \w]\$ "
 
 GOPATH="$HOME/go"
