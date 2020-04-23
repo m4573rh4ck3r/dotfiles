@@ -1,4 +1,4 @@
-alias reset='tput clear'
+alias reset='tput reset'
 alias ls='ls -AF --color=auto'
 alias l='ls -AFhl --color=auto'
 alias rm='rm -v'
