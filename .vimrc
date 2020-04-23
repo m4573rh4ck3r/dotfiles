@@ -67,6 +67,9 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 
+set nocp
+set backspace=indent,eol,start
+
 " Disable highlight when <leader><cr> is pressed
 map <silent> <leader><cr> :noh<cr>
 
