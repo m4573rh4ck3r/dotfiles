@@ -1,6 +1,6 @@
 #!/bin/bash
 set -eux
-yum install -y vim bash-completion
+yum install -y vim bash-completion tmux
 
 # Install Docker CE
 ## Set up the repository
