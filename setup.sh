@@ -70,4 +70,4 @@ systemctl enable --now kubelet
 yum -y install git ncurses-devel gcc make
 git clone https://github.com/vim/vim.git /usr/src/vim
 cd /usr/src/vim && ./configure && make && make install && make clean && cd ~ && rm -rf /var/src/vim
-yup update
+yum -y update
