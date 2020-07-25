@@ -73,3 +73,8 @@ yum -y install git ncurses-devel gcc make
 git clone https://github.com/vim/vim.git /usr/src/vim
 cd /usr/src/vim && ./configure && make && make install && make clean && cd ~ && rm -rf /var/src/vim
 yum -y update
+
+curl https://raw.githubusercontent.com/m4573rh4ck3r/dotfiles/master/.bash_aliases -o "$HOME/.bash_aliases"
+curl https://raw.githubusercontent.com/m4573rh4ck3r/dotfiles/master/.bashrc -o "$HOME/.bashrc"
+curl https://raw.githubusercontent.com/m4573rh4ck3r/dotfiles/master/.vimrc -o "$HOME/.vimrc"
+curl https://raw.githubusercontent.com/m4573rh4ck3r/dotfiles/master/.tmux.conf -o "$HOME/.tmux.conf"
