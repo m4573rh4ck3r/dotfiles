@@ -11,6 +11,8 @@ yum install -y yum-utils device-mapper-persistent-data lvm2
 yum-config-manager --add-repo \
   https://download.docker.com/linux/centos/docker-ce.repo
 
+sed -i 's;gpgkey=https://download.docker.com/linux/centos/gpg;gpgkey=https://download.docker.com/linux/centos/gpg\nmodule_hotfixes=true;g' /etc/yum.repos.d/docker-ce.repo
+
 ## Install Docker CE.
 yum update -y && yum install -y \
   containerd.io-1.2.13 \
